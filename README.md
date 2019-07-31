@@ -16,12 +16,7 @@
       var fromLngbd = startPointBD.longitude;
       
       
-      
-      
-
-
-
-
+     
     console.log('百度转化为腾讯')
       var startPointBD1 = coordinate.transformFromBaiduToGCJ(fromLatbd, fromLngbd);
       var  fromLatbd1 = startPointBD1.latitude;
