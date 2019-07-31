@@ -3,7 +3,7 @@
 
 在要转化的坐标的js中引入
 
-    var coordinate = require('../../utils/WSCoordinate.js')//根据实际存放地址进行引入
+      var coordinate = require('../../utils/WSCoordinate.js')//根据实际存放地址进行引入
 
 
       console.log('转化为百度度坐标')
@@ -17,7 +17,7 @@
       
       
      
-    console.log('百度转化为腾讯')
+      console.log('百度转化为腾讯')
       var startPointBD1 = coordinate.transformFromBaiduToGCJ(fromLatbd, fromLngbd);
       var  fromLatbd1 = startPointBD1.latitude;
       var  fromLngbd1 = startPointBD1.longitude;
