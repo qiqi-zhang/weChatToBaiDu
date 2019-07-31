@@ -1,0 +1,29 @@
+再js中引入
+
+var coordinate = require('../../utils/WSCoordinate.js')
+
+
+      console.log('转化为百度度坐标')
+      var startPointBD = coordinate.transformFromGCJToBaidu(fromLat, fromLng);
+      var endPointBD = coordinate.transformFromGCJToBaidu(toLat, toLng);
+      fromLatbd = startPointBD.latitude;
+      fromLngbd = startPointBD.longitude;
+      toLatbd = endPointBD.latitude;
+      toLngbd = endPointBD.longitude;
+
+
+
+
+    console.log('百度转化为腾讯')
+
+      var startPointBD1 = coordinate.transformFromBaiduToGCJ(fromLatbd, fromLngbd);
+      var endPointBD1 = coordinate.transformFromBaiduToGCJ(toLat, toLng);
+     var  fromLatbd1 = startPointBD1.latitude;
+     var  fromLngbd1 = startPointBD1.longitude;
+     var  toLatbd1 = endPointBD1.latitude;
+     var  toLngbd1 = endPointBD1.longitude;
+
+      console.log(fromLatbd1)
+      console.log(fromLngbd1)
+      console.log(toLatbd1)
+      console.log(toLngbd1)
