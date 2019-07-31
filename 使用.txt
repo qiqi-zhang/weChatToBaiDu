@@ -1,29 +1,28 @@
-��js������
+在要转化的坐标的js中引入
 
-var coordinate = require('../../utils/WSCoordinate.js')
+    var coordinate = require('../../utils/WSCoordinate.js')//根据实际存放地址进行引入
 
 
-      console.log('ת��Ϊ�ٶȶ�����')
+      console.log('转化为百度度坐标')
+      
+      //fromLat:经度
+      //fromLng:纬度
+      
       var startPointBD = coordinate.transformFromGCJToBaidu(fromLat, fromLng);
-      var endPointBD = coordinate.transformFromGCJToBaidu(toLat, toLng);
-      fromLatbd = startPointBD.latitude;
-      fromLngbd = startPointBD.longitude;
-      toLatbd = endPointBD.latitude;
-      toLngbd = endPointBD.longitude;
+      var fromLatbd = startPointBD.latitude;
+      var fromLngbd = startPointBD.longitude;
+      
+      
+      
+      
 
 
 
 
-    console.log('�ٶ�ת��Ϊ��Ѷ')
-
+    console.log('百度转化为腾讯')
       var startPointBD1 = coordinate.transformFromBaiduToGCJ(fromLatbd, fromLngbd);
-      var endPointBD1 = coordinate.transformFromBaiduToGCJ(toLat, toLng);
-     var  fromLatbd1 = startPointBD1.latitude;
-     var  fromLngbd1 = startPointBD1.longitude;
-     var  toLatbd1 = endPointBD1.latitude;
-     var  toLngbd1 = endPointBD1.longitude;
+      var  fromLatbd1 = startPointBD1.latitude;
+      var  fromLngbd1 = startPointBD1.longitude;
 
       console.log(fromLatbd1)
       console.log(fromLngbd1)
-      console.log(toLatbd1)
-      console.log(toLngbd1)
